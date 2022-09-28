@@ -1,6 +1,6 @@
 # Java COMPLETO Programação Orientada a Objetos +Projetos
 
-## Professor Nelio Alves[https://www.udemy.com/user/nelio-alves/]
+## Professor Nelio Alves https://www.udemy.com/user/nelio-alves/
 
 1. Resolvendo um problema sem Orientação a objetos
     - Problema exemplo:
@@ -18,17 +18,13 @@
     Enter the measyres of triangle X:
 
     3.00
-
     4.00
-
     5.00
 
     Enter the measyres of triangle Y:
 
     7.50
-
     4.50
-
     4.02
 
     Triangle X area: 6.0000
