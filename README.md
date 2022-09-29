@@ -35,5 +35,5 @@
 
 2. Criando uma classe com três atributos paa representr melhor o triângulo.
     Criado a classe Trriangle
-    
 
+3 . Criando um método para obtermos os benefícios de reaproveitamento e delegação
