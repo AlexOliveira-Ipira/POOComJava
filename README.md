@@ -1,6 +1,6 @@
 # Java COMPLETO Programação Orientada a Objetos +Projetos
 
-## Professor Nelio Alves https://www.udemy.com/user/nelio-alves/
+## Professor [Nelio Alves](https://www.udemy.com/user/nelio-alves/)
 
 1. Resolvendo um problema sem Orientação a objetos
     - Problema exemplo:
@@ -32,4 +32,8 @@
     Triangle y area: 7.5638
 
     larger area: Y
+
+2. Criando uma classe com três atributos paa representr melhor o triângulo.
+    Criado a classe Trriangle
+    
 
