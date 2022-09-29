@@ -37,3 +37,6 @@
     Criado a classe Trriangle
 
 3 . Criando um método para obtermos os benefícios de reaproveitamento e delegação
+    Criando o metodo area para substituir o calculo dentro do APP.java
+
+## Projeto finalizado    
