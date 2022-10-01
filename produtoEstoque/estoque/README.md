@@ -1,0 +1,1 @@
+## Criando projeto de leitura de um produto, simulando um controle de estoque

@@ -1,18 +1,36 @@
-## Getting Started
+1. Resolvendo um problema sem Orientação a objetos
+    - Problema exemplo:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+        Fazer um programa para ler as mediadas dos lados de dois triângulso X e Y (suponha medidas validas). Em seguida, mostrar o valor das áreas dos dois triãngulos e dizer qual dos dois triângulos possui a maior área.
 
-## Folder Structure
+        A fórmula para calcular a área de um triângulo a partir das medidas de seus lados a,b e c é a seguinte(Fórmula de Heron):
 
-The workspace contains two folders by default, where:
+            Colocar a imagem da formua: image.png
+    
+    Exemplo:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    O programa vai fazer a seguinte pergunta:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    Enter the measyres of triangle X:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    3.00
+    4.00
+    5.00
 
-## Dependency Management
+    Enter the measyres of triangle Y:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    7.50
+    4.50
+    4.02
+
+    Triangle X area: 6.0000
+
+    Triangle y area: 7.5638
+
+    larger area: Y
+
+2. Criando uma classe com três atributos paa representr melhor o triângulo.
+    Criado a classe Trriangle
+
+3 . Criando um método para obtermos os benefícios de reaproveitamento e delegação
+    Criando o metodo area para substituir o calculo dentro do APP.java
