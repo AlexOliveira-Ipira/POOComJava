@@ -22,7 +22,25 @@ public class App {
         System.out.print("Quantity: ");
         product.setQuantity(leituraDados.nextInt());
 
-        System.out.println(product);
+        System.out.println();
+        System.out.println("Product data: " + product);
+
+        System.out.println();
+        System.out.print("Enter the number of products to be added in stock: ");
+        int entQuantity = leituraDados.nextInt();
+        product.addQuantity(entQuantity);
+
+        System.out.println();
+        System.out.println("Update data: " + product);
+
+        System.out.println();
+        System.out.print("Enter the number of products to be removed from stock: ");
+        int saiQuantity = leituraDados.nextInt();
+        product.removeProducts(saiQuantity);
+
+        System.out.println();
+        System.out.println("Update data: " + product);
+
         
         leituraDados.close();
     }
