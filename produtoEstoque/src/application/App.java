@@ -3,6 +3,8 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import javax.swing.event.SwingPropertyChangeSupport;
+
 import entitis.Product;
 
 
@@ -14,13 +16,13 @@ public class App {
         Product product = new Product();
         System.out.println("Enter product data:  ");
         System.out.print("Name: ");
-        product.name = leituraDados.nextLine();
+        product.setName(leituraDados.nextLine());
         System.out.print("Price: ");
-        product.price = leituraDados.nextDouble();
+        product.setPrice(leituraDados.nextDouble());
         System.out.print("Quantity: ");
-        product.quantity = leituraDados.nextInt();
+        product.setQuantity(leituraDados.nextInt());
 
-        System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+        System.out.println(product);
         
         leituraDados.close();
     }
