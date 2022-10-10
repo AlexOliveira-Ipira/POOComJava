@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entitis.Product;
+import entitis.Produto;
 
 
 public class App {
@@ -11,33 +11,35 @@ public class App {
         Locale.setDefault(Locale.US);
         Scanner leituraDados = new Scanner(System.in);
         
-        Product product = new Product();
+
         System.out.println("Enter product data:  ");
         System.out.print("Name: ");
-        product.setName(leituraDados.nextLine());
+        String name =(leituraDados.nextLine());
         System.out.print("Price: ");
-        product.setPrice(leituraDados.nextDouble());
+        Double price = (leituraDados.nextDouble());
         System.out.print("Quantity: ");
-        product.setQuantity(leituraDados.nextInt());
+        int qtde = (leituraDados.nextInt());
+
+        Produto produto = new Produto(name, price, qtde);
 
         System.out.println();
-        System.out.println("Product data: " + product);
+        System.out.println("produto data: " + produto);
 
         System.out.println();
-        System.out.print("Enter the number of products to be added in stock: ");
+        System.out.print("Enter the number of produtos to be added in stock: ");
         int entQuantity = leituraDados.nextInt();
-        product.addQuantity(entQuantity);
+        produto.addQuantity(entQuantity);
 
         System.out.println();
-        System.out.println("Update data: " + product);
+        System.out.println("Update data: " + produto);
 
         System.out.println();
-        System.out.print("Enter the number of products to be removed from stock: ");
+        System.out.print("Enter the number of produtos to be removed from stock: ");
         int saiQuantity = leituraDados.nextInt();
-        product.removeProducts(saiQuantity);
+        produto.removeProducts(saiQuantity);
 
         System.out.println();
-        System.out.println("Update data: " + product);
+        System.out.println("Update data: " + produto);
 
         
         leituraDados.close();

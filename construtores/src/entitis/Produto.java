@@ -1,12 +1,27 @@
 package entitis;
 
 
-public class Product {
+public class Produto {
 
 
     private String name;
     private double price;
     private int quantity;
+
+    public Produto(){
+    }
+    
+    public Produto(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public Produto(String name, double price) {
+        this.name = name;
+        this.price = price;
+
+    }
 
     public double totalValueInStock(){
         return price * quantity;
