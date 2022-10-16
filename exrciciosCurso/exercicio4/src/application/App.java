@@ -42,6 +42,7 @@ public class App {
         System.out.println(conta);
 
         System.out.println();
+        System.out.println("O saque tem uma taxa de $ 5.00.");
         System.out.print("Entre com valor de saque: ");
         double valorSaque = leituradados.nextDouble();
         conta.saque(valorSaque);
