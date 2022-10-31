@@ -39,12 +39,26 @@ public class App {
             System.out.print("Salário: ");
             Double salario = entraDados.nextDouble();
             listaFuncionario.add(new Funcionarios(id, nome, salario));
+        }        
+        
+        System.out.println();
+        System.out.println("Digite o id do empregado que terá um aumento salarial: ");
+        int id = entraDados.nextInt();
+        Funcionarios ajustFunc = listaFuncionario.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        if(ajustFunc != null){
+            System.out.println();
+            System.out.println("Entre com o percentual");
+            double percentual = entraDados.nextDouble();
+            ajustFunc.ajusteSalario(percentual);            
+        }else{
+            System.out.println("Id não encontrado.");
         }
+
         System.out.println(); 
         System.out.println("Lista de Funcionários");
         for(Funcionarios funcionario : listaFuncionario){                   
             System.out.println(funcionario);
-        }      
+        } 
         entraDados.close();
     }
 

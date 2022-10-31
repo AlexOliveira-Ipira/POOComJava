@@ -44,6 +44,9 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+    public void ajusteSalario(double precentual){
+        salario += salario * precentual / 100.0;
+    }
 
     @Override
     public String toString() {
