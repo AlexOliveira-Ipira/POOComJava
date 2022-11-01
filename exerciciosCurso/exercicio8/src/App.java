@@ -8,22 +8,22 @@ public class App {
         int matrizNumero = entraDados.nextInt();
         int[][] matriz = new int[matrizNumero][matrizNumero];
 
-        for (int i=0; i<matrizNumero; i++){
+        for (int i=0; i< matriz.length; i++){
             System.out.println("Entre com o valor da " + (i + 1) + " Linha");
-            for(int j = 0; j <matrizNumero; j++){
+            for(int j = 0; j < matriz[i].length; j++){
                 matriz[i][j] = entraDados.nextInt();
             }
         }
         System.out.println();
         System.out.println("Numeros na diagonal: ");
-        for(int i=0; i <matrizNumero ; i++){
+        for(int i=0; i < matriz.length ; i++){
             System.out.print(matriz[i][i] + " ");
         }
         System.out.println();
         System.out.println();
         int contador = 0;
-        for (int i=0; i<matrizNumero; i++){
-            for(int j = 0; j <matrizNumero; j++){
+        for (int i=0; i< matriz.length; i++){
+            for(int j = 0; j < matriz[i].length; j++){
                 if(matriz[i][j] < 0){
                     contador++;
                 }
